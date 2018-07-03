@@ -42,7 +42,7 @@ def turn(board)
 
   if(valid_move?(board, index) == true)
     puts "Ok"
-  else 
+  else
     turn(board)
   end
 end
