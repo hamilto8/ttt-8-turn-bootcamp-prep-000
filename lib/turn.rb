@@ -20,6 +20,15 @@ def position_taken?(board, index)
   end
 end
 
+def input_to_index(index)
+    index = index.to_i - 1
+    return index
+end
+
+def move(board, index)
+  
+end
+
 def turn
 
 end
