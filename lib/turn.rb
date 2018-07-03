@@ -40,4 +40,5 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   return index
+  valid_move(board, index`)
 end
