@@ -8,7 +8,7 @@ end
 
 def valid_move?(board, index)
   if( index >= 0 && index <= 8)
-    if(board[index] == "" || board[index] == " ")
+    if(board[index] != "X" || board[index] != "O")
       return true
   end
   end
