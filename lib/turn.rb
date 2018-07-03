@@ -10,15 +10,17 @@ end
 
 def valid_move?(board, index)
   if( index >= 0 && index <= 8)
-    if(board[index] != "X" || board[index] != "O")
+    if(position_taken == true)
       return true
-  end
+    end
   end
 end
 
 def position_taken?(board, index)
   if(board[index] == "" || board[index] == " ")
-    valid_move(board, index)
+    return true 
+  else 
+    return false
   end
 end
 
@@ -33,5 +35,5 @@ end
 
 def turn(board)
   puts "Please enter 1-9"
-  
+
 end
